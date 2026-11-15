@@ -37,3 +37,8 @@ The mods ship in the game's 13 languages. A text that reads wrong in yours can b
   [translations/README.md](translations/README.md).
 
 You are credited in the mod's patch notes.
+
+## Licence
+
+The translations and everything else in this repository: [CC0 1.0](LICENSE), free for anyone to use. The mods' source code is not
+here and not under this licence.

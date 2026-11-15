@@ -19,6 +19,11 @@ You do not have to play-test every line, but the texts end up in narrow windows:
 
 Use the **Translation** issue form: language, mod, the current text, your better text.
 
+## Licence
+
+Everything in this repository is under [CC0 1.0](LICENSE) (public domain): anyone may use the translations for anything. By
+opening a pull request you agree that your contribution is under CC0 1.0 too. You are still credited in the mod's patch notes.
+
 ## Everyone
 
 Be kind and keep to the point. Disagree about the idea, not the person. Harassment and insults get a comment removed and the person blocked.
