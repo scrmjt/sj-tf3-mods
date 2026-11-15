@@ -1,0 +1,74 @@
+name: Bug report
+description: Something in an SJ mod does not work, looks wrong, or slows the game down.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: mod
+    attributes:
+      label: Mod
+      options:
+        - SJ Overlays
+        - SJ Industry UI
+        - SJ Line UI
+        - SJ Station UI
+        - SJ Warehouse UI
+        - SJ Options
+        - SJ Calendar Speed
+        - SJ Game Start
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Mod version
+      description: Shown on the mod's mod.io page and in the game's mod list.
+      placeholder: "1.2.1"
+    validations:
+      required: true
+  - type: input
+    id: build
+    attributes:
+      label: Game build
+      description: Steam, Transport Fever 3, Properties, Updates (or the number shown in the main menu), and the Steam branch if not the default.
+    validations:
+      required: true
+  - type: textarea
+    id: other_mods
+    attributes:
+      label: Other mods active
+      description: Every other mod on in the save, or "none".
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open ...
+        2. Click ...
+    validations:
+      required: true
+  - type: textarea
+    id: happened
+    attributes:
+      label: What happened
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: textarea
+    id: log
+    attributes:
+      label: Log
+      description: |
+        The game's log, written every time the game starts: `Steam\userdata\<your number>\3493540\local\crash_dump\stdout.txt`
+        (the lines from the start of the game to the problem; the end of the file is enough for a crash). Paste it here or attach the file.
+        It holds file paths from your PC: remove anything you do not want to share.
+      render: text
+    validations:
+      required: false

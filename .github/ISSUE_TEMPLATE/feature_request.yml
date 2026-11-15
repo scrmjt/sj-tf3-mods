@@ -1,0 +1,35 @@
+name: Feature request
+description: An idea for an SJ mod.
+title: "[Idea] "
+labels: ["feature request"]
+body:
+  - type: dropdown
+    id: mod
+    attributes:
+      label: Mod
+      description: The mod the idea belongs to; pick the closest if it is a new one.
+      options:
+        - SJ Overlays
+        - SJ Industry UI
+        - SJ Line UI
+        - SJ Station UI
+        - SJ Warehouse UI
+        - SJ Options
+        - SJ Calendar Speed
+        - SJ Game Start
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: The idea
+      description: What should the mod show or do?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why
+      description: What are you trying to do in the game that is hard or impossible today?
+    validations:
+      required: true

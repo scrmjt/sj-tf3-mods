@@ -1,0 +1,58 @@
+name: Translation correction
+description: A text in an SJ mod reads wrong in your language (for many texts, open a pull request instead: see CONTRIBUTING.md).
+title: "[Translation] "
+labels: ["translation"]
+body:
+  - type: dropdown
+    id: language
+    attributes:
+      label: Language
+      options:
+        - Deutsch (de)
+        - Espanol (es)
+        - Francais (fr)
+        - Italiano (it)
+        - Japanese (ja)
+        - Korean (ko)
+        - Nederlands (nl)
+        - Polski (pl)
+        - Portugues do Brasil (pt_BR)
+        - Russian (ru)
+        - Simplified Chinese (zh_CN)
+        - Traditional Chinese (zh_TW)
+    validations:
+      required: true
+  - type: dropdown
+    id: mod
+    attributes:
+      label: Mod
+      options:
+        - SJ Overlays
+        - SJ Industry UI
+        - SJ Line UI
+        - SJ Station UI
+        - SJ Warehouse UI
+        - SJ Options
+        - SJ Calendar Speed
+        - SJ Game Start
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: Current text
+      description: Exactly as it shows in the game (a screenshot also helps).
+    validations:
+      required: true
+  - type: textarea
+    id: better
+    attributes:
+      label: Better text
+      description: Keep any {placeholders} as they are, and use the game's own wording where the game has the word.
+    validations:
+      required: true
+  - type: input
+    id: credit
+    attributes:
+      label: Name to credit in the patch notes
+      description: Optional.
